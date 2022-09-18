@@ -1,0 +1,111 @@
+/* * {
+  outline: 1px red solid;
+} */
+
+body {
+  margin: 0;
+  /* padding-top: 3.75rem; */
+  /* background-color: var(--global-foreground-color); */
+}
+
+/* Nav Bar */
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 0% 7.5%;
+  background-color: var(--global-foreground-color);
+  color: var(--global-background-color);
+  height: 3.5rem;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  justify-content: left;
+}
+
+.header-right {
+  display: flex;
+  flex: 3;
+  justify-content: right;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--global-foreground-color);
+  color: var(--global-background-color);
+  height: 2.5rem;
+  align-items: center;
+}
+
+/* Main Sectioning */
+
+main {
+  display: flex;
+  flex-direction: row;
+  /* height: 83vh; */
+  margin: 1.5rem 7.5%;
+}
+
+aside {
+  display: flex;
+  margin-right: 1rem;
+  width: 456px;
+}
+
+aside img {
+  width: 100%;
+}
+
+section {
+  /* display: flex; */
+  flex: 1;
+  background-color: var(--global-background-color);
+  color: var(--global-foreground-color);
+}
+
+.index-page,
+.signin-form form,
+.form-fields,
+.signin-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-header,
+.signin-form,
+.signin-form button {
+  width: 300px;
+}
+
+.signin-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.signin-form .form-fields {
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.signin-form .form-fields input {
+  width: 95%;
+}
+
+.signin-form button {
+  margin-bottom: 0.5rem;
+}
+
+.icon-logo {
+  height: 5rem;
+}
+
+/* Home Page */
