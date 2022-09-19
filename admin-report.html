@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Trinitian Portal</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <h2>Trinity University of Asia</h2>
+        </div>
+        <div class="header-right">
+            <form>
+                <!-- remove this during spring boot migration-->
+                <button class="reg-button button-1" formaction="admin.html">admin</button>
+                <button class="reg-button-filled button-1" formaction="index.html">Logout</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <img class="icon-logo" src="img/TUA-logo.png">
+            <div class="section-header">
+                <h1>Student Request Management</h1>
+                <span class="body-1">Check all of the request from pending up to completed.</span>
+            </div>
+            <form>
+                <span class="h3">From: </span><input type="date"> <span class="h3"> To: </span>
+                <input type="date">
+            </form>
+            <table class="admin-report">
+                <tr class="h3">
+                    <th>Student Number</th>
+                    <th>Student Name</th>
+                    <th>Document Request</th>
+                    <th>Date Requested</th>
+                    <th>Request Status</th>
+                    <th>Check a Request</th>
+                </tr>
+                <tr class="body-1">
+                    <td>2019032102</td>
+                    <td>Juan B. Dela Cruz</td>
+                    <td>TOR</td>
+                    <td>12/03/2016</td>
+                    <td>Pending</td>
+                    <td><button class="general-button button-1">Check</button></td>
+                </tr>
+                <tr class="body-1">
+                    <td>2019032102</td>
+                    <td>Juan B. Dela Cruz</td>
+                    <td>TOR</td>
+                    <td>12/03/2016</td>
+                    <td>Pending</td>
+                    <td><button class="general-button button-1">Check</button></td>
+                </tr>
+                <tr class="body-1">
+                    <td>2019032102</td>
+                    <td>Juan B. Dela Cruz</td>
+                    <td>TOR</td>
+                    <td>12/03/2016</td>
+                    <td>Pending</td>
+                    <td><button class="general-button button-1">Check</button></td>
+                </tr>
+                <tr class="body-1">
+                    <td>2019032102</td>
+                    <td>Juan B. Dela Cruz</td>
+                    <td>TOR</td>
+                    <td>12/03/2016</td>
+                    <td>Pending</td>
+                    <td><button class="general-button button-1">Check</button></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <span class=" body-1">Copyright © Trinity University of Asia. All rights reserved.</span>
+    </footer>
+</body>
+
+</html>

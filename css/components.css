@@ -59,10 +59,18 @@ button:active {
 
 .text-input {
   border: 0px;
-  border-bottom: 2px solid var(--global-foreground-color);
+  border-bottom: 1px solid var(--global-foreground-color);
   background-color: transparent;
-  padding: 0.25rem 0.5rem;
   color: var(--global-foreground-color);
+  width: 8rem;
+}
+.text-input::placeholder {
+  opacity: 1;
+  color: var(--global-foreground-color);
+}
+
+.input-number {
+  width: 1.5rem;
 }
 
 .text-box:focus,
@@ -80,5 +88,17 @@ th,
 td {
   border: 2px solid var(--global-foreground-color);
   border-collapse: collapse;
-  padding: 0 0.25rem;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+a {
+  color: var(--global-foreground-color);
+  font-weight: 600;
 }

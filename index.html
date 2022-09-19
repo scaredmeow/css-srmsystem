@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/favicon.ico">
     <title>Trinitian Portal</title>
 </head>
@@ -15,11 +15,14 @@
 <body>
     <header>
         <div class="header-left">
-            <h2>Trinity University of Asia</h2>
+            <h2><a href="admin.html">Trinity University of Asia</a></h2>
         </div>
         <div class="header-right">
-            <button class="reg-button button-1">Sign In</button>
-            <button class="reg-button-filled button-1">Sign Up</button>
+            <form>
+                <!-- remove this during spring boot migration-->
+                <button class="reg-button button-1" formaction="index.html">Sign In</button>
+                <button class="reg-button-filled button-1" formaction="signup.html">Sign Up</button>
+            </form>
         </div>
     </header>
 
@@ -27,26 +30,27 @@
         <aside>
             <img src="img/trinity-portal-aside.png">
         </aside>
-        <section class="index-page">
-            <img class="icon-logo" src="img/TUA-logo.png">
-            <div class="signin-header">
-                <h1>Hello, Trinitian!</h1>
-                <span class="body-1">Welcome back! Login to access or request for your latest university
-                    documents</span>
-            </div>
-            <div class="signin-form">
-                <form>
-                    <div class="form-fields">
-                        <input type="text" class="text-box body-2" placeholder="Username">
-                        <input type="password" class="text-box body-2" placeholder="Password">
-                    </div>
+
+        <section>
+            <div class="container">
+                <img class="icon-logo" src="img/TUA-logo.png">
+                <div class="section-header">
+                    <h1>Hello, Trinitian!</h1>
+                    <span class="body-1">Welcome back! Login to access or request for your latest university
+                        documents</span>
+                </div>
+                <form class="account" action="student.html">
+                    <input type=" text" class="text-box body-2" placeholder="Username" required>
+                    <input type="password" class="text-box body-2" placeholder="Password" required>
                     <div class="form-buttons">
                         <button class="general-button button-1">Sign In</button>
                     </div>
                 </form>
+                <span class="body-2 redirect">Currently a trinity student? &nbsp<a href="signup.html">Create your
+                        trinitian
+                        account
+                        now.</a></span>
             </div>
-            <span class="body-2 redirect">Currently a trinity student? &nbsp<a href="">Create your trinitian account
-                    now.</a></span>
         </section>
     </main>
 
